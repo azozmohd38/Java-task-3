@@ -1,0 +1,111 @@
+import java.util.Scanner;
+
+public class StudentResultAnalyzer {
+
+
+
+            // Validate marks
+            public static boolean validateMarks(int math, int science, int english, int computer) {
+                return (math >= 0 && math <= 100 &&
+                        science >= 0 && science <= 100 &&
+                        english >= 0 && english <= 100 &&
+                        computer >= 0 && computer <= 100);
+            }
+
+            // Calculate total
+            public static int calculateTotal(int math, int science, int english, int computer) {
+                return math + science + english + computer;
+            }
+
+            // Calculate average
+            public static double calculateAverage(int total, int subjects) {
+                return (double) total / subjects;
+            }
+
+            // Calculate grade
+            public static String calculateGrade(double average) {
+                if (average >= 90)
+                    return "A";
+                else if (average >= 80)
+                    return "B";
+                else if (average >= 70)
+                    return "C";
+                else if (average >= 60)
+                    return "D";
+                else
+                    return "F";
+            }
+
+            // Check performance
+            public static String checkPerformance(String grade) {
+                if (grade.equals("A"))
+                    return "Excellent";
+                else if (grade.equals("B"))
+                    return "Very Good";
+                else if (grade.equals("C"))
+                    return "Good";
+                else if (grade.equals("D"))
+                    return "Pass";
+                else
+                    return "Fail";
+            }
+
+            // Display report
+            public static void displayReport(String name, int math, int science,
+                                             int english, int computer,
+                                             int total, double average,
+                                             String grade, String performance) {
+
+                System.out.println("\n===== Student Report =====");
+                System.out.println("Student Name: " + name);
+                System.out.println("Math: " + math);
+                System.out.println("Science: " + science);
+                System.out.println("English: " + english);
+                System.out.println("Computer: " + computer);
+                System.out.println("Total Marks: " + total);
+                System.out.println("Average Marks: " + average);
+                System.out.println("Final Grade: " + grade);
+                System.out.println("Performance Status: " + performance);
+            }
+
+            public static void main(String[] args) {
+
+                // Create Scanner
+                Scanner input = new Scanner(System.in);
+
+                // Read student information
+                System.out.print("Enter student name: ");
+                String studentName = input.nextLine();
+
+                System.out.print("Enter Math mark: ");
+                int math = input.nextInt();
+
+                System.out.print("Enter Science mark: ");
+                int science = input.nextInt();
+
+                System.out.print("Enter English mark: ");
+                int english = input.nextInt();
+
+                System.out.print("Enter Computer mark: ");
+                int computer = input.nextInt();
+
+                // Validate marks
+                if (!validateMarks(math, science, english, computer)) {
+                    System.out.println("Invalid marks. Please check the student grades.");
+                } else {
+
+                    int total = calculateTotal(math, science, english, computer);
+                    double average = calculateAverage(total, 4);
+                    String grade = calculateGrade(average);
+                    String performance = checkPerformance(grade);
+
+                    displayReport(studentName, math, science, english, computer,
+                            total, average, grade, performance);
+                }
+
+                // Close Scanner
+                input.close();
+            }
+        }
+
+
