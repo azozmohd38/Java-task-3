@@ -15,6 +15,11 @@ public class CircleCalculator {
 
         // Prompt the user to enter the radius
         System.out.print("Enter the radius of the circle: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Invalid radius. Please enter a number.");
+            input.next();
+            System.out.print("Enter the radius of the circle: ");
+        }
         radius = input.nextDouble();
 
         // Validate the radius
