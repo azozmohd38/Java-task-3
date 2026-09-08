@@ -103,7 +103,8 @@ public class StudentResultAnalyzer {
             System.out.println("Invalid marks. Please check the student grades.");
         } else {
             int total = calculateTotal(math, science, english, computer);
-            double average = calculateAverage(total, 4);
+            int subjectCount = 4;
+            double average = calculateAverage(total, subjectCount);
             String grade = calculateGrade(average);
             String performance = checkPerformance(grade);
 
