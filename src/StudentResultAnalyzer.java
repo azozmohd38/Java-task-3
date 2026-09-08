@@ -90,6 +90,11 @@ public class StudentResultAnalyzer {
         int english = input.nextInt();
 
         System.out.print("Enter Computer mark: ");
+        while (!input.hasNextInt()) {
+            System.out.println("Please enter a valid mark.");
+            input.next();
+            System.out.print("Enter Computer mark: ");
+        }
         int computer = input.nextInt();
 
         if (!validateMarks(math, science, english, computer)) {
