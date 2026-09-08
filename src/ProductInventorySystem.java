@@ -146,6 +146,12 @@ public class ProductInventorySystem {
                 continue;
             }
 
+            if (quantity < 0) {
+                System.out.println("Product quantity cannot be negative.");
+                i--;
+                continue;
+            }
+
             productNames.add(name);
             productPrices.add(price);
             productQuantities.add(quantity);
