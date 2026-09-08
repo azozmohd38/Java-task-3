@@ -19,26 +19,21 @@ public class StudentListManager {
         students.add("Shatha");
 
         // Display all student names using a loop
-        for (String student : students){
+        for (String student : students) {
             System.out.println(student);
+        }
 
-            //Display total  number of students in the list
-            System.out.println("total number of student: "+students.size());
+        // Display total number of students in the list
+        System.out.println("Total number of students: " + students.size());
 
+        // Display the first student in the list
+        System.out.println("First Student: " + students.get(0));
 
-            //Display the first student in the list
-            System.out.println("Frist number of student: "+students.get(0));
+        // Display the last student in the list
+        System.out.println("Last Student: " + students.get(students.size() - 1));
 
-            //Display the last student in the list
-            System.out.println("Last Student: " + students.get(students.size() - 1));
-
-
-            //Check if a specific student name exists in the list using a condition
-            String searchstudent = "Sara";
-
-
-            // Check if a specific student exists in the list
-            String searchStudent = "Sara";
+        // Check if a specific student exists in the list
+        String searchStudent = "Sara";
             if (students.contains(searchStudent)) {
          System.out.println("\n" + searchStudent + " is found in the list.");
             } else {
