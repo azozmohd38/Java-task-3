@@ -4,9 +4,9 @@ import java.util.Scanner;
 public class LibraryManagementSystem {
 
     // Method to display all books
-    public static void displayBooks(ArrayList<String> bookNames,
-                                    ArrayList<String> authorNames,
-                                    ArrayList<Boolean> availabilityStatus) {
+    public static void displayBooks(java.util.List<String> bookNames,
+                                    java.util.List<String> authorNames,
+                                    java.util.List<Boolean> availabilityStatus) {
 
         System.out.println("\n========== LIBRARY BOOK LIST ==========");
 
