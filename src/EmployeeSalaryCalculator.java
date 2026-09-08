@@ -12,7 +12,7 @@ public class EmployeeSalaryCalculator {
 
         if (netSalary < 500) {
             return "Low Salary";
-        } else if (netSalary <= 1500) {
+        } else if (netSalary >= 500 && netSalary <= 1500) {
             return "Medium Salary";
         } else {
             return "High Salary";
