@@ -37,6 +37,11 @@ public class TriangleCalculator {
 
         // Prompt the user to enter the three side lengths
         System.out.print("Enter side 1: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter side 1: ");
+        }
         side1 = input.nextDouble();
 
         System.out.print("Enter side 2: ");
