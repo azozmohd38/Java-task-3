@@ -79,6 +79,7 @@ public class TrapezoidCalculator {
             }
 
             // Display the input values
+            System.out.println("\n===== Trapezoid Details =====");
             System.out.println("Base 1: " + base1);
             System.out.println("Base 2: " + base2);
             System.out.println("Height: " + height);
