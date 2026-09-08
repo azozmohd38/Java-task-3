@@ -127,7 +127,7 @@ public class LibraryManagementSystem {
 
         int[] counts = countBooks(availabilityStatus);
 
-        System.out.println("\n========== LIBRARY REPORT ==========");
+        System.out.println("\n========== LIBRARY SUMMARY ==========");
         System.out.println("Total Books           : " + bookNames.size());
         System.out.println("Available Books       : " + counts[0]);
         System.out.println("Unavailable Books     : " + counts[1]);
