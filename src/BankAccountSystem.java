@@ -125,7 +125,9 @@ public class BankAccountSystem {
         System.out.println("\n========== ACCOUNT STATISTICS ==========");
         System.out.println("Total Money in All Accounts : $" + String.format("%.2f", total));
         System.out.println("Highest Account Balance     : $" + String.format("%.2f", highest));
+        double average = total / balances.size();
         System.out.println("Lowest Account Balance      : $" + String.format("%.2f", lowest));
+        System.out.println("Average Account Balance     : $" + String.format("%.2f", average));
     }
 
     // Main method
