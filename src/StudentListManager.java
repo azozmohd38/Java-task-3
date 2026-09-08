@@ -39,7 +39,7 @@ public class StudentListManager {
         String removeStudent = "Sami";
 
         if (students.remove(removeStudent)) {
-            System.out.println("Removed Student: " + removeStudent);
+            System.out.println("Student removed: " + removeStudent);
         } else {
             System.out.println("Student is not found: " + removeStudent);
         }
