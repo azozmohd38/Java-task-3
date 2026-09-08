@@ -12,7 +12,7 @@ public class TriangleCalculator {
         double area;
         double perimeter;
 
-        String triangleType;
+        String classification;
 
         // Create Scanner object
         Scanner input = new Scanner(System.in);
@@ -74,11 +74,11 @@ public class TriangleCalculator {
 
             // Determine the triangle type
             if (side1 == side2 && side2 == side3) {
-                triangleType = "Equilateral Triangle";
+                classification = "Equilateral Triangle";
             } else if (side1 == side2 || side1 == side3 || side2 == side3) {
-                triangleType = "Isosceles Triangle";
+                classification = "Isosceles Triangle";
             } else {
-                triangleType = "Scalene Triangle";
+                classification = "Scalene Triangle";
             }
 
             // Display the results
@@ -90,7 +90,7 @@ public class TriangleCalculator {
             System.out.println("Side 3: " + side3);
             System.out.printf("Area: %.2f%n", area);
             System.out.printf("Perimeter: %.2f%n", perimeter);
-            System.out.println("Triangle Type: " + triangleType);
+            System.out.println("Triangle Type: " + classification);
         }
 
         // Close the Scanner
