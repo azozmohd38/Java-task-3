@@ -63,7 +63,7 @@ public class TrapezoidCalculator {
 
         if (!validMeasurements) {
             System.out.println("Invalid input. All measurements must be greater than zero.");
-    } else {
+        } else {
 
             // Calculate the area and perimeter
             area = ((base1 + base2) * height) / 2.0;
@@ -91,7 +91,7 @@ public class TrapezoidCalculator {
 
             // Display the trapezoid classification
             System.out.println("Trapezoid Classification: " + trapezoidType);
-    }
+        }
 
         input.close();
     }
