@@ -43,6 +43,11 @@ public class TrapezoidCalculator {
         height = input.nextDouble();
 
         System.out.print("Enter the first leg: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter the first leg: ");
+        }
         leg1 = input.nextDouble();
 
         System.out.print("Enter the second leg: ");
