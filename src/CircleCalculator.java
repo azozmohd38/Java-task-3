@@ -11,7 +11,7 @@ public class CircleCalculator {
         double radius;
         double area;
         double circumference;
-        String classification;
+        String circleType;
 
         // Prompt the user to enter the radius
         System.out.print("Enter the radius of the circle: ");
@@ -34,11 +34,11 @@ public class CircleCalculator {
 
             // Classify the circle based on its radius
             if (radius < 5) {
-                classification = "Small Circle";
+                circleType = "Small Circle";
             } else if (radius >= 5 && radius <= 15) {
-                classification = "Medium Circle";
+                circleType = "Medium Circle";
             } else {
-                classification = "Large Circle";
+                circleType = "Large Circle";
             }
 
             // Display the results
@@ -46,7 +46,7 @@ public class CircleCalculator {
             System.out.printf("Radius: %.2f%n", radius);
             System.out.printf("Area: %.2f%n", area);
             System.out.printf("Circumference: %.2f%n", circumference);
-            System.out.println("Classification: " + classification);
+            System.out.println("Classification: " + circleType);
         }
 
         // Close the Scanner
