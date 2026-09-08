@@ -97,7 +97,9 @@ public class StudentResultAnalyzer {
         }
         int computer = input.nextInt();
 
-        if (!validateMarks(math, science, english, computer)) {
+        if (studentName.isEmpty()) {
+            System.out.println("Student name cannot be empty.");
+        } else if (!validateMarks(math, science, english, computer)) {
             System.out.println("Invalid marks. Please check the student grades.");
         } else {
             int total = calculateTotal(math, science, english, computer);
