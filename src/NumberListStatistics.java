@@ -67,6 +67,8 @@ public class NumberListStatistics {
                 positiveCount++;
             } else if (number < 0) {
                 negativeCount++;
+            } else {
+                zeroCount++;
             }
 
             // Find the largest number
