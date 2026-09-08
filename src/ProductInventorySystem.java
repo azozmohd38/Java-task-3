@@ -87,7 +87,7 @@ public class ProductInventorySystem {
 
             System.out.println("--------------------------------------------");
             System.out.println("Product Name : " + productNames.get(i));
-            System.out.println("Price        : " + productPrices.get(i));
+            System.out.printf("Price        : %.2f%n", productPrices.get(i));
             System.out.println("Quantity     : " + productQuantities.get(i));
             System.out.println("Stock Status : " + checkStockStatus(productQuantities.get(i)));
         }
