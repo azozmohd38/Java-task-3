@@ -4,7 +4,13 @@ public class TrapezoidCalculator {
     public static void main(String[] args) {
 
         //  variables
-        double base1, base2, height, leg1, leg2, area, perimeter;
+        double base1;
+        double base2;
+        double height;
+        double leg1;
+        double leg2;
+        double area;
+        double perimeter;
 
         String trapezoidType;
 
