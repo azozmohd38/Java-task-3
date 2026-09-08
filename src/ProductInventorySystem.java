@@ -175,7 +175,6 @@ public class ProductInventorySystem {
                 stockCount[1],
                 mostExpensiveProduct);
 
-        // Close Scanner
         input.close();
     }
 }
