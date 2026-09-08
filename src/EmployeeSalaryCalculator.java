@@ -29,7 +29,7 @@ public class EmployeeSalaryCalculator {
 
         System.out.println("===== Employee Salary Report =====");
         System.out.println("Employee Name : " + employeeName);
-        System.out.println("Basic Salary  : " + basicSalary);
+        System.out.printf("Basic Salary  : %.2f%n", basicSalary);
         System.out.println("Bonus         : " + bonusAmount);
         System.out.println("Deduction     : " + deductionAmount);
         System.out.println("Net Salary    : " + netSalary);
