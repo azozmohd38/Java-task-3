@@ -114,8 +114,9 @@ public class ProductInventorySystem {
 
             System.out.println("\nEnter details for Product " + i);
 
+            input.nextLine();
             System.out.print("Product Name: ");
-            String name = input.next();
+            String name = input.nextLine().trim();
 
             System.out.print("Product Price: ");
             double price = input.nextDouble();
