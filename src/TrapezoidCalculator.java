@@ -72,7 +72,7 @@ public class TrapezoidCalculator {
             // Classify the trapezoid based on its perimeter
             if (perimeter < 30) {
                 trapezoidType = "Small Trapezoid";
-            } else if (perimeter <= 60) {
+            } else if (perimeter >= 30 && perimeter <= 60) {
                 trapezoidType = "Medium Trapezoid";
             } else {
                 trapezoidType = "Large Trapezoid";
