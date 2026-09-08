@@ -28,6 +28,11 @@ public class TriangleCalculator {
 
         // Prompt the user to enter the height
         System.out.print("Enter the height of the triangle: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter the height of the triangle: ");
+        }
         height = input.nextDouble();
 
         // Prompt the user to enter the three side lengths
