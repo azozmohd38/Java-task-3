@@ -45,6 +45,11 @@ public class TriangleCalculator {
         side1 = input.nextDouble();
 
         System.out.print("Enter side 2: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter side 2: ");
+        }
         side2 = input.nextDouble();
 
         System.out.print("Enter side 3: ");
