@@ -34,6 +34,7 @@ public class EmployeeSalaryCalculator {
         System.out.printf("Deduction     : %.2f%n", deductionAmount);
         System.out.printf("Net Salary    : %.2f%n", netSalary);
         System.out.println("Salary Status : " + salaryStatus);
+        System.out.println("--------------------------------");
     }
 
     public static void main(String[] args) {
