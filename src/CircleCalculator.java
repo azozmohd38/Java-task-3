@@ -28,7 +28,8 @@ public class CircleCalculator {
         } else {
 
             // Calculate the area and circumference
-            area = pi * radius * radius;
+            double radiusSquared = radius * radius;
+            area = pi * radiusSquared;
             circumference = 2 * pi * radius;
 
             // Classify the circle based on its radius
