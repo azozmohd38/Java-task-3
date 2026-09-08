@@ -44,7 +44,7 @@ public class StudentListManager {
             System.out.println("Student is not found: " + removeStudent);
         }
 
-        System.out.println("\n===== Updated Student List =====");
+        System.out.println("\n===== Updated Students =====");
         for (String student : students) {
             System.out.println(student);
         }
