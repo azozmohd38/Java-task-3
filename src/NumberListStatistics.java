@@ -96,5 +96,6 @@ public class NumberListStatistics {
         System.out.println("Count of Odd Numbers: " + oddCount);
         System.out.println("Count of Positive Numbers: " + positiveCount);
         System.out.println("Count of Negative Numbers: " + negativeCount);
+        System.out.println("Count of Zero Values: " + zeroCount);
     }
 }
