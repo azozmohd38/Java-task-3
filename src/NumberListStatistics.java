@@ -2,7 +2,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class NumberListStatistics {
-    public static void main() {
+    public static void main(String[] args) {
 
 
         // Create a List to store integer numbers
