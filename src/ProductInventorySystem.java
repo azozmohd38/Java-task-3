@@ -42,7 +42,7 @@ public class ProductInventorySystem {
 
             if (quantity >= 1) {
                 availableProducts++;
-            } else {
+            } else if (quantity == 0) {
                 outOfStockProducts++;
             }
         }
