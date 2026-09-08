@@ -66,6 +66,11 @@ public class StudentResultAnalyzer {
         String studentName = input.nextLine().trim();
 
         System.out.print("Enter Math mark: ");
+        while (!input.hasNextInt()) {
+            System.out.println("Please enter a valid mark.");
+            input.next();
+            System.out.print("Enter Math mark: ");
+        }
         int math = input.nextInt();
 
         System.out.print("Enter Science mark: ");
