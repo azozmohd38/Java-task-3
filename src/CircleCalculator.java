@@ -45,7 +45,7 @@ public class CircleCalculator {
             System.out.println("\n===== Circle Calculator Result =====");
             System.out.printf("Radius: %.2f%n", radius);
             System.out.printf("Area: %.2f%n", area);
-            System.out.println("Circumference: " + circumference);
+            System.out.printf("Circumference: %.2f%n", circumference);
             System.out.println("Classification: " + classification);
         }
 
