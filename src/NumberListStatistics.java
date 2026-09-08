@@ -40,7 +40,7 @@ public class NumberListStatistics {
 
         // Initialize largest and smallest using the first number
         int maximumNumber = numbers.get(0);
-        int smallestNumber = numbers.get(0);
+        int minimumNumber = numbers.get(0);
 
         // Display all numbers
         System.out.println("===== Number List Data =====");
@@ -76,8 +76,8 @@ public class NumberListStatistics {
             }
 
             // Find the smallest number
-            if (number < smallestNumber) {
-                smallestNumber = number;
+            if (number < minimumNumber) {
+                minimumNumber = number;
             }
         }
 
@@ -91,7 +91,7 @@ public class NumberListStatistics {
         System.out.println("Sum of Numbers: " + totalSum);
         System.out.printf("Average Value: %.2f%n", average);
         System.out.println("Largest Number: " + maximumNumber);
-        System.out.println("Smallest Number: " + smallestNumber);
+        System.out.println("Smallest Number: " + minimumNumber);
         System.out.println("Count of Even Numbers: " + evenCount);
         System.out.println("Count of Odd Numbers: " + oddCount);
         System.out.println("Count of Positive Numbers: " + positiveCount);
