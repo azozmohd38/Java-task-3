@@ -164,7 +164,7 @@ public class ProductInventorySystem {
         int[] stockCount = countStockStatus(productQuantities);
 
         // Find most expensive product
-        String expensiveProduct = findMostExpensiveProduct(productNames, productPrices);
+        String mostExpensiveProduct = findMostExpensiveProduct(productNames, productPrices);
 
         // Display report
         displayReport(productNames,
@@ -173,7 +173,7 @@ public class ProductInventorySystem {
                 totalValue,
                 stockCount[0],
                 stockCount[1],
-                expensiveProduct);
+                mostExpensiveProduct);
 
         // Close Scanner
         input.close();
