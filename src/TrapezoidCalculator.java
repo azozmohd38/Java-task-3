@@ -19,6 +19,11 @@ public class TrapezoidCalculator {
 
         // Prompt the user to enter the measurements
         System.out.print("Enter the first base: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter the first base: ");
+        }
         base1 = input.nextDouble();
 
         System.out.print("Enter the second base: ");
