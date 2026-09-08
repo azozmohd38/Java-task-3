@@ -131,6 +131,7 @@ public class LibraryManagementSystem {
         System.out.println("Total Books           : " + bookNames.size());
         System.out.println("Available Books       : " + counts[0]);
         System.out.println("Unavailable Books     : " + counts[1]);
+        System.out.println("Borrowed Books        : " + counts[1]);
         System.out.println("====================================");
     }
 
