@@ -195,7 +195,7 @@ public class LibraryManagementSystem {
 
                 case 2:
                     System.out.print("Enter book name to search: ");
-                    bookName = input.nextLine();
+                    bookName = input.nextLine().trim();
                     searchBook(bookNames, bookName);
                     break;
 
