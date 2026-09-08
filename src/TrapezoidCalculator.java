@@ -87,7 +87,7 @@ public class TrapezoidCalculator {
             System.out.println("Leg 2: " + leg2);
 
             // Display the calculated results
-            System.out.println("Area: " + area);
+            System.out.printf("Area: %.2f%n", area);
             System.out.println("Perimeter: " + perimeter);
 
             // Display the trapezoid classification
