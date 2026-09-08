@@ -3,8 +3,8 @@ public class EmployeeSalaryCalculator {
     // Method to calculate the net salary
     public static double calculateNetSalary(double basicSalary,
                                             double bonusAmount,
-                                            double deduction) {
-        return basicSalary + bonusAmount - deduction;
+                                            double deductionAmount) {
+        return basicSalary + bonusAmount - deductionAmount;
     }
 
     // Method to check the salary status
@@ -23,7 +23,7 @@ public class EmployeeSalaryCalculator {
     public static void displaySalaryDetails(String employeeName,
                                         double basicSalary,
                                         double bonusAmount,
-                                        double deduction,
+                                        double deductionAmount,
                                         double netSalary,
                                         String salaryStatus) {
 
@@ -31,7 +31,7 @@ public class EmployeeSalaryCalculator {
         System.out.println("Employee Name : " + employeeName);
         System.out.println("Basic Salary  : " + basicSalary);
         System.out.println("Bonus         : " + bonusAmount);
-        System.out.println("Deduction     : " + deduction);
+        System.out.println("Deduction     : " + deductionAmount);
         System.out.println("Net Salary    : " + netSalary);
         System.out.println("Salary Status : " + salaryStatus);
     }
@@ -42,7 +42,7 @@ public class EmployeeSalaryCalculator {
         String employeeName;
         double basicSalary;
         double bonusAmount;
-        double deduction;
+        double deductionAmount;
         double netSalary;
         String salaryStatus;
 
@@ -50,15 +50,15 @@ public class EmployeeSalaryCalculator {
         employeeName = "Ahmed";
         basicSalary = 1200.00;
         bonusAmount = 300.00;
-        deduction = 100.00;
+        deductionAmount = 100.00;
 
         // Calculate the net salary
-        netSalary = calculateNetSalary(basicSalary, bonusAmount, deduction);
+        netSalary = calculateNetSalary(basicSalary, bonusAmount, deductionAmount);
 
         // Determine the salary status
         salaryStatus = checkSalaryStatus(netSalary);
 
         // Display all salary details
-        displaySalaryDetails(employeeName, basicSalary, bonusAmount, deduction, netSalary, salaryStatus);
+        displaySalaryDetails(employeeName, basicSalary, bonusAmount, deductionAmount, netSalary, salaryStatus);
     }
 }
