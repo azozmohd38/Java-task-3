@@ -27,7 +27,7 @@ public class EmployeeSalaryCalculator {
                                         double netSalary,
                                         String salaryStatus) {
 
-        System.out.println("===== Employee Salary Details =====");
+        System.out.println("===== Employee Salary Report =====");
         System.out.println("Employee Name : " + employeeName);
         System.out.println("Basic Salary  : " + basicSalary);
         System.out.println("Bonus         : " + bonusAmount);
