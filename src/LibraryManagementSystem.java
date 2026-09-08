@@ -250,7 +250,6 @@ public class LibraryManagementSystem {
 
         } while (choice != 6);
 
-        // Close scanner
         input.close();
     }
 }
