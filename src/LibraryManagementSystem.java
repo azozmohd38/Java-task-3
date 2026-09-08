@@ -24,6 +24,11 @@ public class LibraryManagementSystem {
 
         boolean found = false;
 
+        if (searchName == null || searchName.trim().isEmpty()) {
+            System.out.println("Book name cannot be empty.");
+            return;
+        }
+
         for (String book : bookNames) {
             if (book.equalsIgnoreCase(searchName)) {
                 found = true;
