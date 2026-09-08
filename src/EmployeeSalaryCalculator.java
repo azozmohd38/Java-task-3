@@ -32,7 +32,7 @@ public class EmployeeSalaryCalculator {
         System.out.printf("Basic Salary  : %.2f%n", basicSalary);
         System.out.printf("Bonus         : %.2f%n", bonusAmount);
         System.out.printf("Deduction     : %.2f%n", deductionAmount);
-        System.out.println("Net Salary    : " + netSalary);
+        System.out.printf("Net Salary    : %.2f%n", netSalary);
         System.out.println("Salary Status : " + salaryStatus);
     }
 
