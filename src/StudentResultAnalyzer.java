@@ -58,6 +58,7 @@ public class StudentResultAnalyzer {
         System.out.printf("Average Marks: %.2f%n", average);
         System.out.println("Final Grade: " + grade);
         System.out.println("Performance Status: " + performance);
+        System.out.println("--------------------------------");
     }
 
     public static void main(String[] args) {
