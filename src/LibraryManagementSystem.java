@@ -201,7 +201,7 @@ public class LibraryManagementSystem {
 
                 case 3:
                     System.out.print("Enter book name to borrow: ");
-                    bookName = input.nextLine();
+                    bookName = input.nextLine().trim();
                     borrowBook(bookNames, availabilityStatus, bookName);
                     break;
 
