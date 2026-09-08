@@ -7,7 +7,7 @@ public class CircleCalculator {
         Scanner input = new Scanner(System.in);
 
         // Declare variables
-        double pi = 3.14;
+        final double pi = 3.14;
         double radius;
         double area;
         double circumference;
