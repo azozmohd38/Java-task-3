@@ -48,5 +48,6 @@ public class StudentListManager {
         for (String student : students) {
             System.out.println(student);
         }
+        System.out.println("Updated total: " + students.size());
     }
 }
