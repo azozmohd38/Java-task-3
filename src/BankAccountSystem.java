@@ -233,6 +233,11 @@ public class BankAccountSystem {
 
                 case 3:
                     System.out.print("Enter Account Number: ");
+                    while (!input.hasNextInt()) {
+                        System.out.println("Account number must be a number.");
+                        input.next();
+                        System.out.print("Enter Account Number: ");
+                    }
                     int withdrawAccount = input.nextInt();
 
                     System.out.print("Enter Withdrawal Amount: ");
