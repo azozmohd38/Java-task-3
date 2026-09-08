@@ -49,5 +49,6 @@ public class StudentListManager {
             System.out.println(student);
         }
         System.out.println("Updated total: " + students.size());
+        System.out.println("List empty: " + students.isEmpty());
     }
 }
