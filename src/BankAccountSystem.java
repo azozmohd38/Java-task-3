@@ -218,6 +218,11 @@ public class BankAccountSystem {
 
                 case 2:
                     System.out.print("Enter Account Number: ");
+                    while (!input.hasNextInt()) {
+                        System.out.println("Account number must be a number.");
+                        input.next();
+                        System.out.print("Enter Account Number: ");
+                    }
                     int depositAccount = input.nextInt();
 
                     System.out.print("Enter Deposit Amount: ");
