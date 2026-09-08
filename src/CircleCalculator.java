@@ -50,7 +50,6 @@ public class CircleCalculator {
             System.out.println("--------------------------------");
         }
 
-        // Close the Scanner
         input.close();
     }
 }
