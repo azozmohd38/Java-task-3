@@ -63,7 +63,7 @@ public class StudentResultAnalyzer {
         Scanner input = new Scanner(System.in);
 
         System.out.print("Enter student name: ");
-        String studentName = input.nextLine();
+        String studentName = input.nextLine().trim();
 
         System.out.print("Enter Math mark: ");
         int math = input.nextInt();
