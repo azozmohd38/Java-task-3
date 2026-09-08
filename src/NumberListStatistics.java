@@ -83,7 +83,8 @@ public class NumberListStatistics {
         }
 
         // Calculate the average
-        double average = (double) totalSum / numbers.size();
+        int totalNumbers = numbers.size();
+        double average = (double) totalSum / totalNumbers;
 
         // Display the results
         System.out.println("\n===== Statistics =====");
