@@ -4,7 +4,13 @@ public class TriangleCalculator {
     public static void main(String[] args) {
 
         // Declare variables
-        double base, height, side1, side2, side3, area, perimeter;
+        double base;
+        double height;
+        double side1;
+        double side2;
+        double side3;
+        double area;
+        double perimeter;
 
         String triangleType;
 
