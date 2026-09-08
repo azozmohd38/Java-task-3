@@ -42,7 +42,7 @@ public class CircleCalculator {
             }
 
             // Display the results
-            System.out.println("\n===== Circle Details =====");
+            System.out.println("\n===== Circle Calculator Result =====");
             System.out.println("Radius: " + radius);
             System.out.println("Area: " + area);
             System.out.println("Circumference: " + circumference);
