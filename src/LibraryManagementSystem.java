@@ -202,6 +202,11 @@ public class LibraryManagementSystem {
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
 
+            while (!input.hasNextInt()) {
+                System.out.println("Invalid choice. Please try again.");
+                input.next();
+                System.out.print("Enter your choice: ");
+            }
             choice = input.nextInt();
             input.nextLine();
 
