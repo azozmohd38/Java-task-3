@@ -61,7 +61,10 @@ public class TriangleCalculator {
         side3 = input.nextDouble();
 
         // Validate the input values
-        if (base <= 0 || height <= 0 || side1 <= 0 || side2 <= 0 || side3 <= 0) {
+        boolean validMeasurements = base > 0 && height > 0
+                && side1 > 0 && side2 > 0 && side3 > 0;
+
+        if (!validMeasurements) {
             System.out.println("Invalid input. All values must be greater than zero.");
     } else {
 
