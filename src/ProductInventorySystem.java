@@ -175,6 +175,7 @@ public class ProductInventorySystem {
                 stockCount[1],
                 mostExpensiveProduct);
 
+        System.out.println("Product inventory report completed.");
         input.close();
     }
 }
