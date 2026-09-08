@@ -135,6 +135,7 @@ public class BankAccountSystem {
         }
         System.out.println("Lowest Account Balance      : $" + String.format("%.2f", lowest));
         System.out.println("Average Account Balance     : $" + String.format("%.2f", average));
+        System.out.println("Accounts Above $3000        : " + highBalanceAccounts);
     }
 
     // Main method
