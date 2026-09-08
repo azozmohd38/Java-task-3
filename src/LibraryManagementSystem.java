@@ -11,7 +11,8 @@ public class LibraryManagementSystem {
         System.out.println("\n========== LIBRARY BOOK LIST ==========");
 
         for (int i = 0; i < bookNames.size(); i++) {
-            System.out.println((i + 1) + ". Book Name   : " + bookNames.get(i));
+            System.out.println("Book Index   : " + i);
+            System.out.println("Book Name    : " + bookNames.get(i));
             System.out.println("   Author      : " + authorNames.get(i));
             System.out.println("   Availability: "
                     + (availabilityStatus.get(i) ? "Available" : "Unavailable"));
