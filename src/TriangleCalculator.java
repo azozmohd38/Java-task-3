@@ -69,7 +69,7 @@ public class TriangleCalculator {
     } else {
 
             // Calculate the area and perimeter
-            area = (base * height) / 2;
+            area = (base * height) / 2.0;
             perimeter = side1 + side2 + side3;
 
             // Determine the triangle type
