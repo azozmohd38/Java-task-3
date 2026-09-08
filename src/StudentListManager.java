@@ -23,7 +23,8 @@ public class StudentListManager {
 
         int totalStudents = students.size();
         System.out.println("Total number of students: " + totalStudents);
-        System.out.println("First Student: " + students.get(0));
+        String firstStudent = students.get(0);
+        System.out.println("First Student: " + firstStudent);
         System.out.println("Last Student: " + students.get(students.size() - 1));
 
         String searchStudent = "Sara";
