@@ -28,6 +28,11 @@ public class BankAccountSystem {
 
         boolean found = false;
 
+        if (amount <= 0) {
+            System.out.println("Deposit amount must be greater than zero.");
+            return;
+        }
+
         for (int i = 0; i < accountNumbers.size(); i++) {
             if (accountNumbers.get(i) == accountNumber) {
                 balances.set(i, balances.get(i) + amount);
