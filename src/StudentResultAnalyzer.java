@@ -82,6 +82,11 @@ public class StudentResultAnalyzer {
         int science = input.nextInt();
 
         System.out.print("Enter English mark: ");
+        while (!input.hasNextInt()) {
+            System.out.println("Please enter a valid mark.");
+            input.next();
+            System.out.print("Enter English mark: ");
+        }
         int english = input.nextInt();
 
         System.out.print("Enter Computer mark: ");
