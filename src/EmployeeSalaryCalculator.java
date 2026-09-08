@@ -11,11 +11,11 @@ public class EmployeeSalaryCalculator {
     public static String checkSalaryStatus(double netSalary) {
 
         if (netSalary < 500) {
-        return "Low Salary";
+            return "Low Salary";
         } else if (netSalary <= 1500) {
-        return "Medium Salary";
+            return "Medium Salary";
         } else {
-        return "High Salary";
+            return "High Salary";
         }
     }
 
