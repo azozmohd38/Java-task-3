@@ -93,7 +93,7 @@ public class ProductInventorySystem {
         }
 
         System.out.println("--------------------------------------------");
-        System.out.println("Total Inventory Value      : " + totalValue);
+        System.out.printf("Total Inventory Value      : %.2f%n", totalValue);
         System.out.println("Available Products         : " + availableProducts);
         System.out.println("Out of Stock Products      : " + outOfStockProducts);
         System.out.println("Most Expensive Product     : " + mostExpensiveProduct);
