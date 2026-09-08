@@ -43,7 +43,7 @@ public class NumberListStatistics {
         int smallestNumber = numbers.get(0);
 
         // Display all numbers
-        System.out.println("===== Number List =====");
+        System.out.println("===== Number List Data =====");
         for (int number : numbers) {
             System.out.print(number + " ");
         }
