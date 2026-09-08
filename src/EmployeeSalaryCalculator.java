@@ -61,5 +61,6 @@ public class EmployeeSalaryCalculator {
 
         // Display all salary details
         displaySalaryDetails(employeeName, basicSalary, bonusAmount, deductionAmount, netSalary, salaryStatus);
+        System.out.println("Salary calculation completed.");
     }
 }
