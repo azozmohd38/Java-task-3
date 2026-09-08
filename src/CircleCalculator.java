@@ -35,7 +35,7 @@ public class CircleCalculator {
             // Classify the circle based on its radius
             if (radius < 5) {
                 classification = "Small Circle";
-            } else if (radius <= 15) {
+            } else if (radius >= 5 && radius <= 15) {
                 classification = "Medium Circle";
             } else {
                 classification = "Large Circle";
