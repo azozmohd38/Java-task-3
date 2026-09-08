@@ -4,7 +4,6 @@ public class CircleCalculator {
 
     public static void main(String[] args) {
 
-        // Create a Scanner object to read user input
         Scanner input = new Scanner(System.in);
 
         // Declare variables
