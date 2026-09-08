@@ -207,7 +207,7 @@ public class LibraryManagementSystem {
 
                 case 4:
                     System.out.print("Enter book name to return: ");
-                    bookName = input.nextLine();
+                    bookName = input.nextLine().trim();
                     returnBook(bookNames, availabilityStatus, bookName);
                     break;
 
