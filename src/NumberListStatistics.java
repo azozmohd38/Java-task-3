@@ -94,6 +94,7 @@ public class NumberListStatistics {
         System.out.println("Smallest Number: " + minimumNumber);
         System.out.println("Count of Even Numbers: " + evenCount);
         System.out.println("Count of Odd Numbers: " + oddCount);
+        System.out.println("Even/Odd Total: " + (evenCount + oddCount));
         System.out.println("Count of Positive Numbers: " + positiveCount);
         System.out.println("Non-zero Count: " + (positiveCount + negativeCount));
         System.out.println("Count of Negative Numbers: " + negativeCount);
