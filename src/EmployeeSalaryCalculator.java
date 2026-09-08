@@ -49,7 +49,7 @@ public class EmployeeSalaryCalculator {
 
         // Assign predefined values
         employeeName = "Ahmed";
-        basicSalary = 1200.00;
+        basicSalary = 1200.00; // predefined basic salary
         bonusAmount = 300.00;
         deductionAmount = 100.00;
 
