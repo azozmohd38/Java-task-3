@@ -31,7 +31,7 @@ public class StudentListManager {
         String searchStudent = "Sara";
 
         if (students.contains(searchStudent)) {
-            System.out.println(searchStudent + " is found in the list.");
+            System.out.println("Student found: " + searchStudent);
         } else {
             System.out.println(searchStudent + " is not found in the list.");
         }
