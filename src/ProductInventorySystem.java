@@ -134,6 +134,12 @@ public class ProductInventorySystem {
             }
             int quantity = input.nextInt();
 
+            if (name.isEmpty()) {
+                System.out.println("Product name cannot be empty.");
+                i--;
+                continue;
+            }
+
             productNames.add(name);
             productPrices.add(price);
             productQuantities.add(quantity);
