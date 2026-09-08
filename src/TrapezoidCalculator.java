@@ -94,6 +94,7 @@ public class TrapezoidCalculator {
             System.out.println("Trapezoid Classification: " + trapezoidType);
         }
 
+        System.out.println("Trapezoid calculation completed.");
         input.close();
     }
 }
