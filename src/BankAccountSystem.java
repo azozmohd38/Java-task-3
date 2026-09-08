@@ -203,6 +203,11 @@ public class BankAccountSystem {
             System.out.println("6. Exit");
             System.out.print("Enter your choice: ");
 
+            while (!input.hasNextInt()) {
+                System.out.println("Invalid choice. Please select a number from 1 to 6.");
+                input.next();
+                System.out.print("Enter your choice: ");
+            }
             choice = input.nextInt();
 
             switch (choice) {
