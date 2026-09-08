@@ -8,6 +8,10 @@ public class ProductInventorySystem {
     public static double calculateTotalValue(List<Double> productPrices, List<Integer> productQuantities) {
         double totalValue = 0;
 
+        if (productPrices.size() != productQuantities.size()) {
+            return 0;
+        }
+
         for (int i = 0; i < productPrices.size(); i++) {
             totalValue += productPrices.get(i) * productQuantities.get(i);
         }
