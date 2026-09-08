@@ -54,6 +54,7 @@ public class StudentResultAnalyzer {
         System.out.println("English: " + english);
         System.out.println("Computer: " + computer);
         System.out.println("Total Marks: " + total);
+        System.out.println("Subjects: 4");
         System.out.printf("Average Marks: %.2f%n", average);
         System.out.println("Final Grade: " + grade);
         System.out.println("Performance Status: " + performance);
