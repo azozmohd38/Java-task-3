@@ -100,5 +100,6 @@ public class NumberListStatistics {
         System.out.println("Count of Negative Numbers: " + negativeCount);
         System.out.println("Count of Zero Values: " + zeroCount);
         System.out.println("Classified Total: " + (positiveCount + negativeCount + zeroCount));
+        System.out.println("Number statistics completed.");
     }
 }
