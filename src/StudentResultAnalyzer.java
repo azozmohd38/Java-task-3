@@ -114,6 +114,7 @@ public class StudentResultAnalyzer {
                     total, average, grade, performance);
         }
 
+        System.out.println("Student result analysis completed.");
         input.close();
     }
 }
