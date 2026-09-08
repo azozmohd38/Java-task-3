@@ -59,7 +59,9 @@ public class TrapezoidCalculator {
         leg2 = input.nextDouble();
 
         // Validate the input values
-        if (base1 <= 0 || base2 <= 0 || height <= 0 || leg1 <= 0 || leg2 <= 0) {
+        boolean validMeasurements = base1 > 0 && base2 > 0 && height > 0 && leg1 > 0 && leg2 > 0;
+
+        if (!validMeasurements) {
             System.out.println("Invalid input. All measurements must be greater than zero.");
     } else {
 
