@@ -23,7 +23,7 @@ public class CircleCalculator {
         radius = input.nextDouble();
 
         // Validate the radius
-        if (radius <= 0) {
+        if (radius <= 0.0) {
             System.out.println("Invalid radius. Radius must be greater than zero.");
         } else {
 
