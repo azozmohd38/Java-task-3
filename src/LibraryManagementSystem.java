@@ -241,7 +241,7 @@ public class LibraryManagementSystem {
                     break;
 
                 case 6:
-                    System.out.println("Thank you for using the Library Management System.");
+                    System.out.println("Library management completed.");
                     break;
 
                 default:
