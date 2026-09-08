@@ -93,7 +93,7 @@ public class TriangleCalculator {
             System.out.println("Triangle Type: " + classification);
         }
 
-        // Close the Scanner
+        System.out.println("Triangle calculation completed.");
         input.close();
     }
 }
