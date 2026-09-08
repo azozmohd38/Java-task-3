@@ -89,7 +89,7 @@ public class TriangleCalculator {
             System.out.println("Side 2: " + side2);
             System.out.println("Side 3: " + side3);
             System.out.printf("Area: %.2f%n", area);
-            System.out.println("Perimeter: " + perimeter);
+            System.out.printf("Perimeter: %.2f%n", perimeter);
             System.out.println("Triangle Type: " + triangleType);
         }
 
