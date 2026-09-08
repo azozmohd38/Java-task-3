@@ -136,7 +136,6 @@ public class LibraryManagementSystem {
         System.out.println("====================================");
     }
 
-    // Main method
     public static void main(String[] args) {
 
         // Scanner object for user input
