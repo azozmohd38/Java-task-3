@@ -2,60 +2,51 @@ import java.util.Scanner;
 
 public class StudentResultAnalyzer {
 
-
-
-    // Validate marks
     public static boolean validateMarks(int math, int science, int english, int computer) {
-        return (math >= 0 && math <= 100 &&
-        science >= 0 && science <= 100 &&
-        english >= 0 && english <= 100 &&
-        computer >= 0 && computer <= 100);
+        return math >= 0 && math <= 100
+                && science >= 0 && science <= 100
+                && english >= 0 && english <= 100
+                && computer >= 0 && computer <= 100;
     }
 
-    // Calculate total
     public static int calculateTotal(int math, int science, int english, int computer) {
         return math + science + english + computer;
     }
 
-    // Calculate average
     public static double calculateAverage(int total, int subjects) {
         return (double) total / subjects;
     }
 
-    // Calculate grade
     public static String calculateGrade(double average) {
-        if (average >= 90)
+        if (average >= 90) {
             return "A";
-        else if (average >= 80)
+        } else if (average >= 80) {
             return "B";
-        else if (average >= 70)
+        } else if (average >= 70) {
             return "C";
-        else if (average >= 60)
+        } else if (average >= 60) {
             return "D";
-        else
-            return "F";
+        }
+        return "F";
     }
 
-    // Check performance
     public static String checkPerformance(String grade) {
-        if (grade.equals("A"))
+        if (grade.equals("A")) {
             return "Excellent";
-        else if (grade.equals("B"))
+        } else if (grade.equals("B")) {
             return "Very Good";
-        else if (grade.equals("C"))
+        } else if (grade.equals("C")) {
             return "Good";
-        else if (grade.equals("D"))
+        } else if (grade.equals("D")) {
             return "Pass";
-        else
-            return "Fail";
+        }
+        return "Fail";
     }
 
-    // Display report
     public static void displayReport(String name, int math, int science,
-                             int english, int computer,
-                             int total, double average,
-                             String grade, String performance) {
-
+                                     int english, int computer,
+                                     int total, double average,
+                                     String grade, String performance) {
         System.out.println("\n===== Student Report =====");
         System.out.println("Student Name: " + name);
         System.out.println("Math: " + math);
@@ -69,11 +60,8 @@ public class StudentResultAnalyzer {
     }
 
     public static void main(String[] args) {
-
-        // Create Scanner
         Scanner input = new Scanner(System.in);
 
-        // Read student information
         System.out.print("Enter student name: ");
         String studentName = input.nextLine();
 
@@ -89,23 +77,18 @@ public class StudentResultAnalyzer {
         System.out.print("Enter Computer mark: ");
         int computer = input.nextInt();
 
-        // Validate marks
         if (!validateMarks(math, science, english, computer)) {
             System.out.println("Invalid marks. Please check the student grades.");
-    } else {
-
+        } else {
             int total = calculateTotal(math, science, english, computer);
             double average = calculateAverage(total, 4);
             String grade = calculateGrade(average);
             String performance = checkPerformance(grade);
 
             displayReport(studentName, math, science, english, computer,
-            total, average, grade, performance);
-    }
+                    total, average, grade, performance);
+        }
 
-        // Close Scanner
         input.close();
     }
-    }
-
-
+}
