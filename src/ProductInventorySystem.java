@@ -54,6 +54,10 @@ public class ProductInventorySystem {
     public static String findMostExpensiveProduct(List<String> productNames,
                                                   List<Double> productPrices) {
 
+        if (productNames.isEmpty() || productPrices.isEmpty()) {
+            return "None";
+        }
+
         double highestPrice = productPrices.get(0);
         String mostExpensiveProduct = productNames.get(0);
 
