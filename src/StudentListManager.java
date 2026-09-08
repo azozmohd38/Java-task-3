@@ -50,5 +50,6 @@ public class StudentListManager {
         }
         System.out.println("Updated total: " + students.size());
         System.out.println("List empty: " + students.isEmpty());
+        System.out.println("Student list management completed.");
     }
 }
