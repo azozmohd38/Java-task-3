@@ -47,7 +47,7 @@ public class EmployeeSalaryCalculator {
         String salaryStatus;
 
         // Assign predefined values
-        employeeName = "Ahmed ";
+        employeeName = "Ahmed";
         basicSalary = 1200.00;
         bonus = 300.00;
         deduction = 100.00;
