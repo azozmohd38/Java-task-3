@@ -263,7 +263,7 @@ public class BankAccountSystem {
                     break;
 
                 case 6:
-                    System.out.println("Thank you for using the Bank Account Management System.");
+                    System.out.println("Bank account management completed.");
                     break;
 
                 default:
