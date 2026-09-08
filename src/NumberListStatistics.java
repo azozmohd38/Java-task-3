@@ -87,6 +87,7 @@ public class NumberListStatistics {
 
         // Display the results
         System.out.println("\n===== Statistics =====");
+        System.out.println("Total Numbers: " + totalNumbers);
         System.out.println("Sum of Numbers: " + totalSum);
         System.out.printf("Average Value: %.2f%n", average);
         System.out.println("Largest Number: " + largestNumber);
