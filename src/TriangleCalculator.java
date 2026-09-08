@@ -19,6 +19,11 @@ public class TriangleCalculator {
 
         // Prompt the user to enter the base
         System.out.print("Enter the base of the triangle: ");
+        while (!input.hasNextDouble()) {
+            System.out.println("Please enter a valid number.");
+            input.next();
+            System.out.print("Enter the base of the triangle: ");
+        }
         base = input.nextDouble();
 
         // Prompt the user to enter the height
