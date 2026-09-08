@@ -66,7 +66,7 @@ public class TriangleCalculator {
 
         if (!validMeasurements) {
             System.out.println("Invalid input. All values must be greater than zero.");
-    } else {
+        } else {
 
             // Calculate the area and perimeter
             area = (base * height) / 2.0;
@@ -90,11 +90,11 @@ public class TriangleCalculator {
             System.out.println("Area: " + area);
             System.out.println("Perimeter: " + perimeter);
             System.out.println("Triangle Type: " + triangleType);
-    }
+        }
 
         // Close the Scanner
         input.close();
     }
-    }
+}
 
 
