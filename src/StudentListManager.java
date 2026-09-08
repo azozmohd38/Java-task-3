@@ -21,7 +21,8 @@ public class StudentListManager {
             System.out.println(student);
         }
 
-        System.out.println("Total number of students: " + students.size());
+        int totalStudents = students.size();
+        System.out.println("Total number of students: " + totalStudents);
         System.out.println("First Student: " + students.get(0));
         System.out.println("Last Student: " + students.get(students.size() - 1));
 
