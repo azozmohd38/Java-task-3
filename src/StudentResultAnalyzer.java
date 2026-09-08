@@ -47,7 +47,7 @@ public class StudentResultAnalyzer {
                                      int english, int computer,
                                      int total, double average,
                                      String grade, String performance) {
-        System.out.println("\n===== Student Report =====");
+        System.out.println("\n===== Student Result Report =====");
         System.out.println("Student Name: " + name);
         System.out.println("Math: " + math);
         System.out.println("Science: " + science);
