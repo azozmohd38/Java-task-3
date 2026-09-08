@@ -33,7 +33,7 @@ public class StudentListManager {
         if (students.contains(searchStudent)) {
             System.out.println("Student found: " + searchStudent);
         } else {
-            System.out.println(searchStudent + " is not found in the list.");
+            System.out.println("Student not found: " + searchStudent);
         }
 
         String removeStudent = "Sami";
