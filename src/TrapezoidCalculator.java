@@ -66,7 +66,7 @@ public class TrapezoidCalculator {
     } else {
 
             // Calculate the area and perimeter
-            area = ((base1 + base2) * height) / 2;
+            area = ((base1 + base2) * height) / 2.0;
             perimeter = base1 + base2 + leg1 + leg2;
 
             // Classify the trapezoid based on its perimeter
