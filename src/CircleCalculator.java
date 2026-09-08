@@ -50,6 +50,7 @@ public class CircleCalculator {
             System.out.println("--------------------------------");
         }
 
+        System.out.println("Circle calculation completed.");
         input.close();
     }
 }
