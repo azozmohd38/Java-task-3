@@ -36,6 +36,7 @@ public class NumberListStatistics {
         int oddCount = 0;
         int positiveCount = 0;
         int negativeCount = 0;
+        int zeroCount = 0;
 
         // Initialize largest and smallest using the first number
         int largestNumber = numbers.get(0);
