@@ -119,6 +119,11 @@ public class ProductInventorySystem {
             String name = input.nextLine().trim();
 
             System.out.print("Product Price: ");
+            while (!input.hasNextDouble()) {
+                System.out.println("Price must be a number.");
+                input.next();
+                System.out.print("Product Price: ");
+            }
             double price = input.nextDouble();
 
             System.out.print("Product Quantity: ");
