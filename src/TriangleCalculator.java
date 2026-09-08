@@ -82,6 +82,7 @@ public class TriangleCalculator {
             }
 
             // Display the results
+            System.out.println("\n===== Triangle Details =====");
             System.out.println("Base: " + base);
             System.out.println("Height: " + height);
             System.out.println("Side 1: " + side1);
