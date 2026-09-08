@@ -44,10 +44,9 @@ public class NumberListStatistics {
 
         // Display all numbers
         System.out.println("===== Number List Data =====");
-        for (int number : numbers) {
-            System.out.print(number + " ");
+        for (int i = 0; i < numbers.size(); i++) {
+            System.out.println("Index " + i + " = " + numbers.get(i));
         }
-        System.out.println();
 
         // Process each number in the list
         for (int number : numbers) {
