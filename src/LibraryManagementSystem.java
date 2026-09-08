@@ -81,6 +81,11 @@ public class LibraryManagementSystem {
 
         boolean found = false;
 
+        if (bookName == null || bookName.trim().isEmpty()) {
+            System.out.println("Book name cannot be empty.");
+            return;
+        }
+
         for (int i = 0; i < bookNames.size(); i++) {
             if (bookNames.get(i).equalsIgnoreCase(bookName)) {
                 found = true;
