@@ -88,7 +88,7 @@ public class TrapezoidCalculator {
 
             // Display the calculated results
             System.out.printf("Area: %.2f%n", area);
-            System.out.println("Perimeter: " + perimeter);
+            System.out.printf("Perimeter: %.2f%n", perimeter);
 
             // Display the trapezoid classification
             System.out.println("Trapezoid Classification: " + trapezoidType);
