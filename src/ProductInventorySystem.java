@@ -21,7 +21,9 @@ public class ProductInventorySystem {
 
     // Check the stock status
     public static String checkStockStatus(int quantity) {
-        if (quantity > 10) {
+        if (quantity < 0) {
+            return "Invalid Stock";
+        } else if (quantity > 10) {
             return "High Stock";
         } else if (quantity >= 1) {
             return "Available";
