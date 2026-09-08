@@ -89,8 +89,12 @@ public class LibraryManagementSystem {
         for (int i = 0; i < bookNames.size(); i++) {
             if (bookNames.get(i).equalsIgnoreCase(bookName)) {
                 found = true;
-                availabilityStatus.set(i, true);
-                System.out.println("Book returned successfully.");
+                if (availabilityStatus.get(i)) {
+                    System.out.println("Book is already available.");
+                } else {
+                    availabilityStatus.set(i, true);
+                    System.out.println("Book returned successfully.");
+                }
                 break;
             }
         }
