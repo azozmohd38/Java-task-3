@@ -1,13 +1,9 @@
 public class EmployeeSalaryCalculator {
 
     // Method to calculate the net salary
-    public static double calculateNetSalary(
-        double basicSalary,
-        double bonus,
-        double deduction)
-    {
-
-
+    public static double calculateNetSalary(double basicSalary,
+                                            double bonus,
+                                            double deduction) {
         return basicSalary + bonus - deduction;
     }
 
