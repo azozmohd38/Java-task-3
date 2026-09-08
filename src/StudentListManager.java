@@ -16,6 +16,7 @@ public class StudentListManager {
         students.add("Ibrahim");
         students.add("Shatha");
 
+        System.out.println("===== Student List =====");
         for (String student : students) {
             System.out.println(student);
         }
