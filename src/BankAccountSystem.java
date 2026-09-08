@@ -157,6 +157,10 @@ public class BankAccountSystem {
         customerNames.add("Omar");
         balances.add(6400.00);
 
+        accountNumbers.add(1008);
+        customerNames.add("Mona");
+        balances.add(950.50);
+
         int choice;
 
         // Display menu until the user chooses Exit
